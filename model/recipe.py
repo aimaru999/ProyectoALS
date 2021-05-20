@@ -1,6 +1,6 @@
 from google.appengine.ext import ndb
 
-class Receta(ndb.Model):
+class Recipe(ndb.Model):
     title=ndb.TextProperty(required=True)
     ingredients = ndb.TextProperty(required=True)
     directions = ndb.TextProperty(required=True)

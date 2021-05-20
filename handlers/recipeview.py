@@ -2,7 +2,7 @@
 import webapp2
 from webapp2_extras import jinja2
 
-from model.recipe import Receta
+from model.recipe import Recipe
 from model.comments import Comment
 from webapp2_extras.users import users
 import time
@@ -13,7 +13,7 @@ class RecipeViewHandler(webapp2.RequestHandler):
 
     def get(self):
         login.logging_user(self)
-        recetas = Receta.query()
+        recetas = Recipe.query()
 
         recipe_id=self.request.get("id")
 
@@ -39,7 +39,7 @@ class RecipeViewHandler(webapp2.RequestHandler):
     def post(self):
         login.logging_user(self)
 
-        recetas = Receta.query()
+        recetas = Recipe.query()
 
         recipe_id=self.request.get("id")
 

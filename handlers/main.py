@@ -20,7 +20,7 @@ import webapp2
 from google.appengine.ext import ndb
 from webapp2_extras import jinja2
 from webapp2_extras.users import users
-from model.recipe import Receta
+from model.recipe import Recipe
 from resources import login
 import time
 
@@ -36,14 +36,14 @@ class MainHandler(webapp2.RequestHandler):
 
         if title_last != "" and ingr_last != "" and prep_last != "":
             currentUser=users.get_current_user().nickname();
-            aux = Receta(parent=ndb.Key("Recipe",
+            aux = Recipe(parent=ndb.Key("Recipe",
                                         title_last or "*notitle*"),
-                         title=title_last, ingredients=ingr_last, directions=prep_last,author=currentUser)
+                         title=title_last, ingredients=ingr_last, directions=prep_last, author=currentUser)
 
             aux.put()
             time.sleep(0.5)
 
-        recetas = Receta.query()
+        recetas = Recipe.query()
 
         template_values = {
             'recetas': recetas
@@ -57,7 +57,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         login.logging_user(self)
 
-        recetas = Receta.query()
+        recetas = Recipe.query()
 
         template_values = {
             'recetas': recetas
