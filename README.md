@@ -26,7 +26,7 @@ El proyecto se estructura en 7 directorios:\
 \
 **ENTIDADES DE LA APLICACIÓN**\
 \
-**Comment**:Almacena los comentarios de los usuarios:
+**Comment**: Almacena los comentarios de los usuarios:
 | Atributo | Tipo de dato | Requisitos | Def |
 | -- | -- | -- | -- |
 | author | TextProperty | not null | Almacena el autor del comentario|
@@ -35,7 +35,7 @@ El proyecto se estructura en 7 directorios:\
 | title | TextProperty | not null | Almacena el título del comentario|
 <br />
 
-**Recipe**:Almacena las recetas de la aplicación:
+**Recipe**: Almacena las recetas de la aplicación:
 | Atributo | Tipo de dato | Requisitos | Def |
 | -- | -- | -- | -- |
 | title | TextProperty | not null | Almacena el nombre de la receta|
