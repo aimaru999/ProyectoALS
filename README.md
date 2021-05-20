@@ -1,8 +1,10 @@
 # **PROYECTO DE ALS - RECETARIUM** <br/>
+<br/>
 
 **DESCRIPCIÓN**<br/>
-Foro básico para postear recetas y comentar recetas
-
+Foro básico para postear recetas y comentar recetas<br/>
+<br/>
+<br/>
 
 **REQUISITOS PARA CORRER LA APLICACIÓN**\
 -Pycharm\
