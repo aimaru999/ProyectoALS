@@ -1,3 +1,9 @@
+# **PROYECTO DE ALS - RECETARIUM** <br/>
+
+**DESCRIPCIÓN**<br/>
+Foro básico para postear recetas y comentar recetas
+
+
 **REQUISITOS PARA CORRER LA APLICACIÓN**\
 -Pycharm\
 -Python2.7\
