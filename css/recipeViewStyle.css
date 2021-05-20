@@ -1,0 +1,84 @@
+.multiline{
+    white-space: pre-wrap;
+}
+
+.recipeView{
+    text-align: center;
+}
+
+.recipeViewNames{
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+}
+
+#recipeViewTitle{
+    font-size: xx-large;
+    text-decoration: underline;
+    padding-top: 20px;
+    font-style: italic;
+    margin-top:0px;
+}
+
+#directions{
+    padding-top: 15px;
+}
+
+#comment-box{
+    text-align: left;
+
+}
+
+#comment-container{
+    height: fit-content;
+    width: 97%;
+    border-style: solid;
+    border-color:darkgrey;
+}
+
+#comment-title{
+    position:relative;
+    text-align: left;
+    display: inline-block;
+    padding-right: 45px;
+    margin-left: 20px;
+}
+
+#comment-author{
+    position:relative;
+    text-align: right;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#comment-content{
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+#addComButton{
+    width: 93.25%;
+    border: none;
+    height: fit-content;
+    text-align: left;
+    margin-left: -40px;
+    cursor: pointer;
+    font-size: large;
+    padding-left: 70px;
+    display: inline;
+    background-color:slategray;
+    height: 60px;
+    color: white;
+
+
+}
+
+
+#addComForm{
+    width: 93.25%;
+    background-color: slategray;
+    margin-left: 80px;
+    margin-top: 100px;
+
+}

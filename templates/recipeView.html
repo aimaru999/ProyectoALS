@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recetarium</title>
+    <link rel="stylesheet" href="/css/recipeViewStyle.css">
+    <link rel="stylesheet" href="/css/headerStyle.css">
+
+</head>
+<body>
+<header class="header">
+    <iframe class="iframe" src="/templates/header.html"></iframe>
+
+</header>
+<div class="main">
+<h3 class="recipeView" id="recipeViewTitle">{{receta_actual.title}}</h3>
+
+
+<p class="recipeViewNames" >Ingredientes:</p>
+<p  class="recipeView multiline">{{receta_actual.ingredients}}</p>
+
+<p class="recipeViewNames" id="directions">Preparación:</p>
+<p class="recipeView multiline">{{receta_actual.directions}}</p>
+    
+
+
+
+ <form action="/commentsForm" method="get" id="addComForm">
+    <input type="hidden" id="id" name="id"  value="{{receta_actual.key.id()}}" >
+    <input type="submit" name="recipe" id="addComButton" value="Añadir Comentario" /></imput>
+ </form>
+
+ {% if comentarios.count() > 0 %}
+ <ul id="comment-box">
+ {% for comentario in comentarios %}
+<div id="comment-container">
+    <h2 id="comment-title">{{comentario.title}}</h2>
+    <p id="comment-author">{{comentario.author}}</p>
+    <p id="comment-content">{{comentario.comment}}</p>
+
+    <br><br>
+
+</div>
+
+
+ {% endfor %}
+
+ </ul>
+ {% endif %}
+
+
+
+
+<form action="/" method="get" id="return-form">
+    <button type="submit" name="recipe" id="return-button" value="Volver" /><img src="/icons/back-arrow.png" height="30px" width="30px"></img></button>
+</form>
+</div>
+</body>
+</html>

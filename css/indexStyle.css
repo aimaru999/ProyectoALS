@@ -1,0 +1,57 @@
+#recipeList{
+    width: 100%;
+    background-color: lightgray;
+    border: black;
+    border-width: thin;
+
+
+}
+
+.viewLink{
+    width: 100%;
+    border: none;
+    height: fit-content;
+    text-align: center;
+    margin-left: -55px;
+    cursor: pointer;
+    font-size: large;
+    padding-left: 100px;
+    display: inline;
+    background-color: lightgray;
+    font-style: italic;
+
+}
+
+#main-title{
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#addRecipeButton{
+    width: 100%;
+    border: none;
+    height: fit-content;
+    text-align: left;
+    margin-left: -40px;
+    cursor: pointer;
+    font-size: large;
+    padding-left: 70px;
+    display: inline;
+    background-color:slategray;
+    height: 60px;
+
+}
+
+
+#addRecipeForm{
+    width: 100%;
+    background-color: slategray;
+}
+
+#recipe-container{
+    border-style: solid;
+    border-color: darkgrey;
+}
+

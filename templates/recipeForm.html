@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/headerStyle.css">
+
+
+    <include src="header.html"></include>
+</head>
+<body>
+<header class="header">
+    <iframe class="iframe" src="/templates/header.html"></iframe>
+
+</header>
+
+<div class="main">
+<h3 class="form-title" >Añadir Receta</h3>
+
+<form method="post" id="form"  action="/" enctype="multipart/form-data" onsubmit="return(setUpRecipeForm(event))">
+  <label for="rtitle">Título Receta:</label><br>
+  <input type="text" id="rtitle" name="rtitle" required><br>
+
+  <label for="ringredientes">Ingredientes:</label><br>
+  <textarea type="text" id="ringredientes" name="ringredientes" required rows="10" cols="40" required></textarea><br>
+
+  <label for="rpreparacion">Preparación:</label><br>
+  <textarea type="text" id="rpreparacion" name="rpreparacion" rows="20" cols="40" required></textarea><br>
+
+  </label><br>
+
+
+
+
+  <button type="submit" id="create" class="create"><img src="/icons/add.png" height="45px" width="45px"></img></button>
+</form>
+
+<script type="text/javascript" src="/js/validations.js"></script>
+<form action="/" method="get" id="return-form">
+    <button type="submit" name="recipe" id="return-button" value="Volver" /><img src="/icons/back-arrow.png" height="30px" width="30px"></img></button>
+</form>
+
+</div>
+</body>
+</html>

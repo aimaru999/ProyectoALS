@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/headerStyle.css">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<header class="header">
+    <iframe class="iframe" src="/templates/header.html"></iframe>
+
+</header>
+<div class="main">
+
+<h3 class="form-title" id="comment-form-title">Añadir Comentario</h3>
+<form  id="form" id="comment-form" method="post" action="/recipeView" onsubmit="return(setUpCommetsForm(event))">
+  <label for="content">Título:</label><br>
+  <input type="text" id="title-comment" name="title-commment" required></input><br>
+
+  <input type="hidden" id="author" name="author" value={{user}}><br>
+
+  <label for="content">Comentario:</label><br>
+  <textarea type="text" id="content" name="content" required rows="10" cols="40"></textarea><br>
+
+  <input type="hidden" id="id" name="id" value={{id}}>
+
+  <button type="submit" id="create-comment" class="create"><img src="/icons/add.png" height="45px" width="45px"></img></button>
+</form>
+<script type="text/javascript" src="/js/validations.js"></script>
+<form action="/" method="get" id="return-form">
+    <button type="submit" name="recipe" id="return-button" value="Volver" /><img src="/icons/back-arrow.png" height="30px" width="30px"></img></button>
+</form>
+</div>
+</body>
+</html>

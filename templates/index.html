@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/css/headerStyle.css">
+    <link rel="stylesheet" href="/css/indexStyle.css">
+</head>
+<body>
+<header class="header">
+    <iframe class="iframe" src="/templates/header.html"></iframe>
+
+</header>
+<div class="main">
+
+
+<h2 id="main-title">Recetas</h2>
+
+
+
+ {% if recetas.count() > 0 %}
+ <div id="recipe-container">
+ {% for receta in recetas %}
+
+    <form  method="post" action="/recipeView" id="recipeList">
+    <input type="hidden" id="id" name="id" value="{{receta.key.id()}}" >
+    <input type="submit" class="viewLink" value={{receta.title}}></input>
+    </form>
+
+
+ {% endfor %}
+ </div>
+ {% endif %}
+
+
+
+
+<form action="/recipeForm" style="border-style: solid;border-color: darkgrey" method="post" id="addRecipeForm">
+    <input style="text-align: center;color:white" type="submit" name="recipe" id="addRecipeButton" value="Añadir Receta" /></imput>
+
+</form>
+
+</div>
+
+</body>
+</html>

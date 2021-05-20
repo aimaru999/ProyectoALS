@@ -1,0 +1,97 @@
+
+.header{
+    background: darkred;
+    border-width:0px;
+    display: block;
+    padding-left: 10px;
+    padding-top: 5px;
+    max-height: 120px;
+    color: white;
+}
+
+.iframe{
+    border-width: 0px;
+    height: 100px;
+    position: relative;
+    width: 300px;
+    overflow: no-display;
+
+}
+
+html{
+    min-width: 700px;
+}
+
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+
+
+}
+
+.main{
+    background: whitesmoke;
+}
+
+
+
+.login{
+    text-align: end;
+    padding-top:20px ;
+    background: darkred;
+    border-width:0px;
+    display: flex;
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    float: right;
+    color: white;
+}
+
+
+#return-form{
+    margin-left: 40px;
+}
+
+#return-button{
+     border: none;
+     background: none;
+     cursor:pointer;
+}
+
+
+#form{
+    padding-left: 45%;
+    padding-top: 15px;
+    font-size: large;
+}
+
+
+
+
+
+.form-title{
+    font-size: xx-large;
+    text-decoration: underline;
+    padding-top: 20px;
+    font-style: italic;
+    margin-top:0px;
+    text-align: center;
+}
+
+.create{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 12%;
+}
+
+#comment-form-title{
+    padding-left: 2em;
+}
+
+
+#create-comment{
+    margin-top: 20px;
+}
