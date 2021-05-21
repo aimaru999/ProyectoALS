@@ -2,9 +2,11 @@
 import webapp2
 from webapp2_extras import jinja2
 
-
+##Handler of the Recipe Form
 
 class RecipeFormHandler(webapp2.RequestHandler):
+
+    ##Loads the form
 
     def post(self):
 

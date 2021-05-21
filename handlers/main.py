@@ -23,10 +23,11 @@ from webapp2_extras.users import users
 from model.recipe import Recipe
 from resources import login
 import time
-
+##Handler Of the Main Page
 
 class MainHandler(webapp2.RequestHandler):
 
+    #Inserts Recipes into the DataStore when recieved a post petition with proper data and loads the list view
     def post(self):
         login.logging_user(self)
 
@@ -54,6 +55,7 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(
             jinja.render_template("index.html", **template_values))
 
+    #Loads The listView when recieved a get petition
     def get(self):
         login.logging_user(self)
 

@@ -2,7 +2,7 @@
 from webapp2_extras.users import users
 
 
-
+#Function that loads Login/Out Link into a View
 def logging_user(self):
     user = users.get_current_user()
     if user:

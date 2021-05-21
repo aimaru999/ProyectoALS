@@ -2,11 +2,11 @@
 import webapp2
 from webapp2_extras import jinja2
 from webapp2_extras.users import users
-
+##Handler Comments Form
 class CommentsFormHandler(webapp2.RequestHandler):
 
 
-
+    #Inserts the hidden fields needed data into the form when recieving a get petition
     def get(self):
 
         recipe_id=self.request.get("id")

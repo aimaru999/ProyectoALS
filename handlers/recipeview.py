@@ -8,9 +8,11 @@ from webapp2_extras.users import users
 import time
 from resources import login
 
+#Handler of the RecipeView
 
 class RecipeViewHandler(webapp2.RequestHandler):
 
+    #Loads Recipe View and comments when a get petition is recieved
     def get(self):
         login.logging_user(self)
         recetas = Recipe.query()
@@ -35,7 +37,7 @@ class RecipeViewHandler(webapp2.RequestHandler):
             jinja.render_template("recipeView.html",**template_values))
 
 
-
+    #Loads Recipe View and comments when a post petition is recieved and inserts comments into DataStore when the data recived is suitable
     def post(self):
         login.logging_user(self)
 
