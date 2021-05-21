@@ -46,7 +46,7 @@ El proyecto se estructura en 7 directorios:\
 
 **FUNCIONALIDADES IMPLEMENTADAS**<br/>
 Por el momento la aplicación dispone de:<br/>
--Gestión de acceso a la aplicación con controlo de acceso.<br/>
+-Gestión de acceso a la aplicación con control de acceso.<br/>
 -Listado de comentarios y recetas<br/>
 -Añadir recetas y comentarios<br/>
 
